@@ -1,91 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head lang="en">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <title>file_explorer</title>
-
-
+	<title>Cute file browser</title>
 
 
-   
-</head>
-<!-- Include our stylesheet -->
-<link href="styles.css" rel="stylesheet">
-
-<html style="background-attachment: scroll;">
-
-<head lang="en">
+	<!-- Include our stylesheet -->
+	<link href="assets/css/styles.css" rel="stylesheet"/>
 
 </head>
-
 <body>
 
-    <div class="filemanager">
+	<div class="filemanager">
 
-        <div class="search">
-            <input type="search" placeholder="Find a file..">
-        </div>
+		<div class="search">
+			<input type="search" placeholder="Find a file.." />
+		</div>
 
-        <div class="breadcrumbs"><span class="folderName">files</span></div>
+		<div class="breadcrumbs"></div>
 
-        <ul class="data animated">
-            <li class="folders"><a href="files/Archives" title="files/Archives" class="folders"><span
-                        class="icon folder full"></span><span class="name">Archives</span> <span class="details">3
-                        items</span></a></li>
-            <li class="folders"><a href="files/Important Documents" title="files/Important Documents"
-                    class="folders"><span class="icon folder full"></span><span class="name">Important Documents</span>
-                    <span class="details">2 items</span></a></li>
-            <li class="folders"><a href="files/Movies" title="files/Movies" class="folders"><span
-                        class="icon folder full"></span><span class="name">Movies</span> <span class="details">1
-                        item</span></a></li>
-            <li class="folders"><a href="files/Music" title="files/Music" class="folders"><span
-                        class="icon folder full"></span><span class="name">Music</span> <span class="details">3
-                        items</span></a></li>
-            <li class="folders"><a href="files/Nothing here" title="files/Nothing here" class="folders"><span
-                        class="icon folder"></span><span class="name">Nothing here</span> <span
-                        class="details">Empty</span></a></li>
-            <li class="folders"><a href="files/Photos" title="files/Photos" class="folders"><span
-                        class="icon folder full"></span><span class="name">Photos</span> <span class="details">5
-                        items</span></a></li>
-            <li class="files"><a href="files/Readme.html" title="files/Readme.html" class="files"><span
-                        class="icon file f-html">.html</span><span class="name">Readme.html</span> <span
-                        class="details">344 Bytes</span></a></li>
-        </ul>
+		<ul class="data"></ul>
 
-        <div class="nothingfound" style="display: none;">
-            <div class="nofiles"></div>
-            <span>No files here.</span>
-        </div>
+		<div class="nothingfound">
+			<div class="nofiles"></div>
+			<span>No files here.</span>
+		</div>
 
-    </div>
+	</div>
 
-    <footer style="display: none;">
-        <a class="tz" href="https://tutorialzine.com/2014/09/cute-file-browser-jquery-ajax-php/">Cute File Browser with
-            jQuery, AJAX and PHP</a>
-        <div id="tzine-actions"><iframe
-                src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Ftutorialzine.com%2F2014%2F09%2Fcute-file-browser-jquery-ajax-php%2F&amp;layout=button_count&amp;show_faces=false&amp;width=450&amp;action=like&amp;colorscheme=light&amp;height=21"
-                scrolling="no" frameborder="0" allowtransparency="true"></iframe><iframe allowtransparency="true"
-                frameborder="0" scrolling="no"
-                src="https://platform.twitter.com/widgets/tweet_button.html?url=https%3A%2F%2Ftutorialzine.com%2F2014%2F09%2Fcute-file-browser-jquery-ajax-php%2F&amp;via=tutorialzine&amp;count=horizontal"></iframe>
-        </div>
+	<!-- <footer>
+        <a class="tz" href="http://tutorialzine.com/2014/09/cute-file-browser-jquery-ajax-php/">Cute File Browser with jQuery, AJAX and PHP</a>
+        <div id="tzine-actions"></div>
         <span class="close"></span>
-    </footer>
+    </footer> -->
 
-    <!-- Include our script files -->
-    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="assets/js/script.js"></script>
-    <script id="_carbonads_projs" type="text/javascript"
-    src="https://srv.carbonads.net/ads/CKYIK5QM.json?segment=placement:tutorialzinecom&amp;callback=_carbonads_go">
-</script>
+	<!-- Include our script files -->
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="assets/js/script.js"></script>
 
- 
-
-
-    <script id="_carbonads_js" type="text/javascript" async=""
-        src="https://cdn.carbonads.com/carbon.js?zoneid=1673&amp;serve=C6AILKT&amp;placement=tutorialzinecom"></script>
 </body>
-
 </html>
