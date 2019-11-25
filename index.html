@@ -7,9 +7,17 @@
 
 	<title>Cute file browser</title>
 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+	</script>
 
 	<!-- Include our stylesheet -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
 	<link href="assets/css/styles.css" rel="stylesheet" />
+
+
+
 
 </head>
 
@@ -24,93 +32,112 @@
 
 		<!-- <div class="breadcrumbs"></div> -->
 
-		<ul class="data"></ul>
-		<li class="folders"><a href="files/Archives" title="files/Archives" class="folders"><span
-					class="icon folder full"></span><span class="name">Archives</span> <span class="details">3
-					items</span></a></li>
-
-		<a href="files/Archives" title="files/Archives" class="folders"><span class="icon folder full"></span><span
-				class="name">Archives</span> <span class="details">3 items</span></a>
-
-		<li class="folders"><a href="files/Archives" title="files/Archives" class="folders"><span
-					class="icon folder full"></span><span class="name">Archives</span> <span class="details">3
-					items</span></a></li>
-
-		<li class="folders"><a href="files/Important Documents" title="files/Important Documents" class="folders"><span
-					class="icon folder full"></span><span class="name">Important Documents</span> <span
-					class="details">2 items</span></a></li>
-
-		<a href="files/Important Documents" title="files/Important Documents" class="folders"><span
-				class="icon folder full"></span><span class="name">Important Documents</span> <span class="details">2
-						items</span></a><span class="icon folder full"></span>
+		<div class="container-fluid">
+			<div class="container">
+				<div class="row">
 
 
-		<li class="folders"><a href="files/Important Documents" title="files/Important Documents" class="folders"><span
-					class="icon folder full"></span><span class="name">Important Documents</span> <span
-					class="details">2 items</span></a></li>
+					<ul class="data"></ul>
+					<li class="folders"><a href="Archives" title="files/Archives" class="folders"><span
+								class="icon folder full"></span><span class="name">Archives</span> <span
+								class="details">3
+								items</span></a></li>
 
-		<li class="folders"><a href="files/Movies" title="files/Movies" class="folders"><span
-					class="icon folder full"></span><span class="name">Movies</span> <span class="details">1
-					item</span></a></li><span class="icon folder full"></span>
+					<!-- <a href="files/Archives" title="files/Archives" class="folders"><span
+							class="icon folder full"></span><span class="name">Archives</span> <span class="details">3
+							items</span></a> -->
 
-		<a href="files/Movies" title="files/Movies" class="folders"><span class="icon folder full"></span><span
-				class="name">Movies</span> <span class="details">1 item</span></a>
+					<li class="folders"><a href="Archives" title="files/Archives" class="folders"><span
+								class="icon folder full"></span><span class="name">Archives</span> <span
+								class="details">3
+								items</span></a></li>
 
-		<li class="folders"><a href="files/Music" title="files/Music" class="folders"><span
-					class="icon folder full"></span><span class="name">Music</span> <span class="details">3
-					items</span></a></li>
-
-		<a href="files/Archives" title="files/Archives" class="folders"><span class="icon folder full"></span><span
-				class="name">Archives</span> <span class="details">3 items</span></a>
-
-		<li class="folders"><a href="files/Important Documents" title="files/Important Documents" class="folders"><span
-					class="icon folder full"></span><span class="name">Important Documents</span> <span
-					class="details">2 items</span></a></li>
-
-
-		<li class="folders"><a href="files/Movies" title="files/Movies" class="folders"><span
-					class="icon folder full"></span><span class="name">Movies</span> <span class="details">1
-					item</span></a></li>
-
-		<a href="files/Movies" title="files/Movies" class="folders"><span class="icon folder full"></span><span
-				class="name">Movies</span> <span class="details">1 item</span></a>
-
-		<li class="folders"><a href="files/Music" title="files/Music" class="folders"><span
-					class="icon folder full"></span><span class="name">Music</span> <span class="details">3
-					items</span></a></li>
-
-		<a href="files/Music" title="files/Music" class="folders"><span class="icon folder full"></span><span
-				class="name">Music</span> <span class="details">3 items</span></a>
+					<li class="folders"><a href="Documents" title="files/Important Documents"
+							class="folders"><span class="icon folder full"></span><span class="name">Important
+								Documents</span> <span class="details">2 items</span></a></li>
+<!-- 
+					<a href="files/Important Documents" title="files/Important Documents" class="folders"><span
+							class="icon folder full"></span><span class="name">Important Documents</span> <span
+							class="details">2
+							items</span></a><span class="icon folder full"></span> -->
 
 
-		<li class="folders"><a href="files/Nothing here" title="files/Nothing here" class="folders"><span
-					class="icon folder"></span><span class="name">Nothing here</span> <span
-					class="details">Empty</span></a></li>
+					<li class="folders"><a href="Documents" title="files/Important Documents"
+							class="folders"><span class="icon folder full"></span><span class="name">Important
+								Documents</span> <span class="details">2 items</span></a></li>
 
-		<a href="files/Nothing here" title="files/Nothing here" class="folders"><span class="icon folder"></span><span
-				class="name">Nothing here</span> <span class="details">Empty</span></a>
+					<li class="folders"><a href="Movies" title="files/Movies" class="folders"><span
+								class="icon folder full"></span><span class="name">Movies</span> <span class="details">1
+								item</span></a></li>
 
-		<span class="icon folder"></span>
+					<!-- <a href="files/Movies" title="files/Movies" class="folders"><span
+							class="icon folder full"></span><span class="name">Movies</span> <span class="details">1
+							item</span></a> -->
 
+					<li class="folders"><a href="Music" title="files/Music" class="folders"><span
+								class="icon folder full"></span><span class="name">Music</span> <span class="details">3
+								items</span></a></li>
+<!-- 
+					<a href="files/Archives" title="files/Archives" class="folders"><span
+							class="icon folder full"></span><span class="name">Archives</span> <span class="details">3
+							items</span></a> -->
 
-		<li class="folders"><a href="files/Photos" title="files/Photos" class="folders"><span
-					class="icon folder full"></span><span class="name">Photos</span> <span class="details">5
-					items</span></a></li>
-
-		<a href="files/Nothing here" title="files/Nothing here" class="folders"><span class="icon folder"></span><span
-				class="name">Nothing here</span> <span class="details">Empty</span></a>
-
-		<li class="folders"><a href="files/Photos" title="files/Photos" class="folders"><span
-					class="icon folder full"></span><span class="name">Photos</span> <span class="details">5
-					items</span></a></li>
-
-		<a href="files/Photos" title="files/Photos" class="folders"><span class="icon folder full"></span><span
-				class="name">Photos</span> <span class="details">5 items</span></a>
-
-		<span class="icon folder full"></span>
+					<li class="folders"><a href="Documents" title="Documents"
+							class="folders"><span class="icon folder full"></span><span class="name">Important
+								Documents</span> <span class="details">2 items</span></a></li>
 
 
+					<li class="folders"><a href="Movies" title="Movies" class="folders"><span
+								class="icon folder full"></span><span class="name">Movies</span> <span class="details">1
+								item</span></a></li>
 
+								<!-- <a href="files/Photos" title="files/Photos" class="folders"><span
+									class="icon folder full"></span><span class="name">Photos</span> <span class="details">5
+									items</span></a> -->
+
+					
+
+					<li class="folders"><a href="Music" title="Music" class="folders"><span
+								class="icon folder full"></span><span class="name">Music</span> <span class="details">3
+								items</span></a></li>
+<!-- 
+					<a href="files/Music" title="files/Music" class="folders"><span
+							class="icon folder full"></span><span class="name">Music</span> <span class="details">3
+							items</span></a>
+							<a href="files/Movies" title="files/Movies" class="folders"><span
+								class="icon folder full"></span><span class="name">Movies</span> <span class="details">1
+								item</span></a> -->
+
+					<li class="folders"><a href="Empty" title="Empty" class="folders"><span
+								class="icon folder"></span><span class="name">Nothing here</span> <span
+								class="details">Empty</span></a></li>
+<!-- 
+					<a href="files/Nothing here" title="files/Nothing here" class="folders"><span
+							class="icon folder"></span><span class="name">Nothing here</span> <span
+							class="details">Empty</span></a>
+
+					<span class="icon folder"></span> -->
+
+
+					<li class="folders"><a href="Photos" title="Photos" class="folders"><span
+								class="icon folder full"></span><span class="name">Photos</span> <span class="details">5
+								items</span></a></li>
+<!-- 
+					<a href="files/Nothing here" title="files/Nothing here" class="folders"><span
+							class="icon folder"></span><span class="name">Nothing here</span> <span
+							class="details">Empty</span></a> -->
+
+					<li class="folders"><a href="Photos" title="Photos" class="folders"><span
+								 class="icon folder full"></span><span class="name">Photos</span> <span class="details">5
+								items</span></a></li> 
+
+				
+<!-- 
+					<span class="icon folder full"></span> -->
+
+				</div>
+			</div>
+		</div>
 
 
 		<div class="nothingfound">
@@ -129,6 +156,9 @@
 	<!-- Include our script files -->
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script src="assets/js/script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 </body>
 
