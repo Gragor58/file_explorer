@@ -544,7 +544,7 @@ footer #tzine-actions iframe{
 	height: 21px;
 	width: 95px;
 	position: relative;
-	float: left;
+	display: left;
 	margin-top: 11px;
 }
 
