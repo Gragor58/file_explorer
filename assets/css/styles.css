@@ -45,7 +45,7 @@ body {
 
 /*-------------------------
 	Breadcrumps
--------------------------*/
+-------------------------*/ 
 
 
 .filemanager .breadcrumbs {
@@ -201,8 +201,7 @@ li{
 	text-overflow: ellipsis;
 	top: 40px;
 	background-position:20px;
-
-
+	
 }
 .icon.folder {
 	display: inline-block;
@@ -272,4 +271,9 @@ li{
 .pad-left{
 	padding-left: 100px;
 
+}
+
+a{
+	color: #FFF;
+	text-decoration: none!important;
 }
