@@ -17,15 +17,15 @@
 
 body {
 	
-	background-color: #23232e83;
+	background-color: #23232ec7;
 	font: 14px normal Arial, Helvetica, sans-serif;
 	z-index: -4;
 }
 
-.container{
+
 	/* background-color: white;
 	margin-top: 150px; */
-}
+
 /*-------------------------
 	File manager
 -------------------------*/
@@ -43,6 +43,11 @@ body {
 		margin: 30px auto 0;
 		padding: 1px;
 	}
+}
+
+.home{
+	margin-left: 100px;
+	/* padding-top: -15px; */
 }
 
 
@@ -180,8 +185,14 @@ li{
 	cursor: pointer;
 	
 }
-/* .header{
-	background-image: url(../../medias/home-icon.jpg); */
+.header{
+	background-image: url(../medias/home-icon.png);
+	cursor: pointer;
+
+}
+.top{
+	margin-top: 50px;
+	
 }
 
 .folders{
