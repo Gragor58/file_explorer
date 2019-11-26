@@ -147,8 +147,8 @@ body {
 
 /* .filemanager .data.animated {
 	-webkit-animation: showSlowlyElement 700ms;  /*Chrome, Safari, Opera  */
-	animation: showSlowlyElement 700ms;  /*Standard syntax */
-}  */
+	/* animation: showSlowlyElement 700ms;  Standard syntax */
+
 
 /* .filemanager .data li {
 	
@@ -189,10 +189,10 @@ body {
 
 @media all and (max-width:965px) {
 
-	.filemanager .data li {
+	/* .filemanager .data li {
 		width: 100%;
 		margin: 5px 0;
-	}
+	} */
 
 }
 
@@ -217,11 +217,9 @@ body {
 	font-size: 23px;
 } */
 
-.container{
-	
-}
 
 li{
+	
 	border-radius: 3px;
 	background-color: #373743;
 	width: 300px;
@@ -236,16 +234,24 @@ li{
 
 }
 
+
+
 .folders{
-	
+	 
+	background-image: url(../../medias/folder-icon.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-size: 50px;
 	font-size: 15px;
 	font-weight: 700;
 	color: white;
 	line-height: 20px;
-	width: 150px;
-	white-space: nowrap;
-	display: block;
-	/* position: absolute; */
+	width: 350px;
+	/* white-space: nowrap; */
+	/* display: block; */
+	/* padding-left: 10px;
+	padding-top: 15px;
+	 */
 
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -264,8 +270,8 @@ li{
 	content: '';
 	float: left;
 	clear: left;
-
-	background-color: #a0d4e4;
+	
+	/* background-color: #a0d4e4; */
 	width: 3em;
 	height: 2.25em;
 
