@@ -1,5 +1,5 @@
 <?php
-$imgdefault = 
+$imgDEFAULT = '/media/folder-icon.png'
 $DEFAULT='/var/www/html/'; /*Default redirection quand le script commence*/
 
 if(isset($_GET['d'])){
@@ -17,7 +17,7 @@ if(isset($_GET['d'])){
   }
   
   if($fileInfo->isDir()){
-  echo "<a href='?d=".rawurlencode($url)."'>". $fileInfo->getFilename() . "</a><br>\n";
+  echo "<img src="$imgDEFAULT"/><a href='?d=".rawurlencode($url)."'>". $fileInfo->getFilename() . "</a><br>\n";
 
   }
   if($fileInfo->isfile()){
