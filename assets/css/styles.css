@@ -23,8 +23,6 @@ body {
 }
 
 
-	/* background-color: white;
-	margin-top: 150px; */
 
 /*-------------------------
 	File manager
@@ -47,7 +45,7 @@ body {
 
 .home{
 	margin-left: 100px;
-	/* padding-top: -15px; */
+
 }
 
 
@@ -206,12 +204,7 @@ li{
 	color: white;
 	line-height: 20px;
 	width: 350px;
-	/* white-space: nowrap; */
-	/* display: block; */
-	/* padding-left: 10px;
-	padding-top: 15px;
-	 */
-
+	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	top: 40px;
@@ -230,11 +223,8 @@ li{
 	content: '';
 	float: left;
 	clear: left;
-	
-	/* background-color: #a0d4e4; */
 	width: 3em;
 	height: 2.25em;
-
 	border-radius: 0.1em;
 }
 
