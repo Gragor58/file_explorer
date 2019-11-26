@@ -200,6 +200,7 @@ li{
 	overflow: hidden;
 	text-overflow: ellipsis;
 	top: 40px;
+	background-position:20px;
 
 
 }
@@ -255,4 +256,20 @@ li{
 
 @media (max-width: 1024px) {
 	#bsaHolder, footer{ display:none;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.pad-left{
+	padding-left: 100px;
+
 }
