@@ -1,26 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>file_explorer</title>
-</head>
-<body>
-        <?php
+<?php
+$imgdefault = 
+$DEFAULT='/var/www/html/'; /*Default redirection quand le script commence*/
 
-            $fichier = fopen('essaie.txt','r+');
+if(isset($_GET['d'])){
+  
+  $DEFAULT ='/var/www/html/'.$_GET['d'];
+  }
+
+  foreach (new DirectoryIterator($DEFAULT) as $fileInfo){
+    if (isset($_GET['d']) ){ 
+    $url=$_GET['d']."/".$fileInfo->getFilename();
+  }
+
+  else{
+    $url=$fileInfo->getFilename();
+  }
+  
+  if($fileInfo->isDir()){
+  echo "<a href='?d=".rawurlencode($url)."'>". $fileInfo->getFilename() . "</a><br>\n";
+
+  }
+  if($fileInfo->isfile()){
+    echo  $fileInfo->getFilename() . "<br>\n";
+  }
+
+  }
 
 
-            $i=1;
-            while(i<= 10){
-            $ligne = fgets($fichier);
-            echo $ligne;
-            $i++;
-            }
-            fclose($fichier);
 
-
-        ?>
-</body>
-</html>
+?>
