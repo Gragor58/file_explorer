@@ -17,7 +17,7 @@ if(isset($_GET['d'])){
   }
   
   if($fileInfo->isDir()){
-  echo "<img src="$imgDEFAULT"/><a href='?d=".rawurlencode($url)."'>". $fileInfo->getFilename() . "</a><br>\n";
+  echo "<img src="$imgDEFAULT"/><a href='".rawurlencode($url)."'>". $fileInfo->getFilename() . "</a><br>\n";
 
   }
   if($fileInfo->isfile()){

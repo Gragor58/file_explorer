@@ -58,15 +58,7 @@
 							$url=$fileInfo->getFilename();
 						  }
 						  
-						  if($fileInfo->isDir()){
-						  echo '<img src="'.$imgDEFAULT.'" alt="Fichier" width="50px" height="50px"/>',"<a href='?d=".rawurlencode($url)."'>". $fileInfo->getFilename() . "</a><br>\n";
-						
-						  }
-						  if($fileInfo->isfile()){
-							echo  $fileInfo->getFilename() . "<br>\n";
-						  }
-						
-						  }
+						  
 						
 						
 						
@@ -75,7 +67,19 @@
 
 
 						<li class="folders"><a href="Archives" title="files/Archives" class=""><span
-									class="icon folder full"></span><span class="name">Archives</span> <span
+									class="icon folder full">
+								<?php
+if($fileInfo->isDir()){
+						  echo '<img src="'.$imgDEFAULT.'" alt="Fichier" width="50px" height="50px"/>',"<a href='?d=".rawurlencode($url)."'>". $fileInfo->getFilename() . "</a><br>\n";
+						
+						  }
+						  if($fileInfo->isfile()){
+							echo  $fileInfo->getFilename() . "<br>\n";
+						  }
+						
+						  }
+								?>
+								</span><span class="name">Archives</span> <span
 									class="details">3
 									items</span></a></li>
 
