@@ -78,7 +78,7 @@ body {
 -------------------------*/
 
 
-/* .filemanager .search {
+.filemanager .search {
 	position: absolute;
 	padding-right: 30px;
 	cursor: pointer;
@@ -88,9 +88,9 @@ body {
 	display: block;
 	width: 40px;
 	height: 40px;
-} */
+}
 
-/* .filemanager .search:before {
+.filemanager .search:before {
 	content: '';
 	position: absolute;
 	margin-top:12px;
@@ -100,9 +100,9 @@ body {
 	border: 2px solid #ffffff;
 	right: 8px;
 	
-} */
+}
 
-/* .filemanager .search:after {
+.filemanager .search:after {
 	content: '';
 	width: 3px;
 	height: 10px;
@@ -113,9 +113,9 @@ body {
 	right: 6px;
 	-webkit-transform: rotate(-45deg);
 	transform: rotate(-45deg);
-} */
+}
 
-/* .filemanager .search input[type=search] {
+.filemanager .search input[type=search] {
 	border-radius: 2px;
 	color: #4D535E;
 	background-color: #FFF;
@@ -132,67 +132,17 @@ body {
 	border: none;
 	padding-right: 10px;
 	-webkit-appearance: none;
-} */
+}
 
 
 /*-------------------------
 	Content area
 -------------------------*/
-/* 
-.filemanager .data {
-	
-	margin-top: 60px;
-	z-index: -3;
-} */
 
-/* .filemanager .data.animated {
-	-webkit-animation: showSlowlyElement 700ms;  /*Chrome, Safari, Opera  */
-	/* animation: showSlowlyElement 700ms;  Standard syntax */
-
-
-/* .filemanager .data li {
-	
-	border-radius: 3px;
-	background-color: #373743;
-	width: 307px;
-	height: 118px;
-	list-style-type: none;
-	margin: 10px;
-	display: inline-block;
-	position: relative;
-	overflow: hidden;
-	padding: 0.3em;
-	z-index: 1;
-	cursor: pointer;
-	box-sizing: border-box;
-	transition: 0.3s background-color;
-} */
-
-
-
-/* .filemanager .data li .name {
-	color: #ffffff;
-	font-size: 15px;
-	font-weight: 700;
-	line-height: 20px;
-	width: 150px;
-	white-space: nowrap;
-	display: inline-block;
-	position: absolute;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	top: 40px;
-	
-} */
 
 
 
 @media all and (max-width:965px) {
-
-	/* .filemanager .data li {
-		width: 100%;
-		margin: 5px 0;
-	} */
 
 }
 
@@ -213,9 +163,6 @@ body {
 		Icons
 -------------------------*/
 
-/* .icon {
-	font-size: 23px;
-} */
 
 
 li{
@@ -230,10 +177,7 @@ li{
 	padding: 0.3em;
 	cursor: pointer;
 	
-
-
 }
-
 
 
 .folders{
