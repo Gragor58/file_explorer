@@ -15,12 +15,13 @@
 	<!-- Include our stylesheet -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-	<link href="assets/css/styles.css" rel="stylesheet" />
-
+	<link href="css/styles.css" rel="stylesheet" />
 
 
 
 </head>
+<div class="header"></div>
+<img src="../rootprojet/medias/home-icon.jpg" alt="">
 
 <body>
 
@@ -36,65 +37,52 @@
 				<div class="row">
 
 
-					<ul class="data"></ul>
-					<li class="folders pad-left py-5"><a href="" title="files/Archives" class=""><span
-								 ><span class="name">Archives</span> <span
-								class="details">3
-								items</span></a></li>
 
-					
-					<li class="folders"><a href="Archives" title="files/Archives" class=""><span
-								class="icon folder full"></span><span class="name">Archives</span> <span
-								class="details">3
-								items</span></a></li>
-
-					<li class="folders"><a href="Documents" title="Documents"
-							class=""><span class="icon folder full"></span><span class="name"></span>
-								Documents</span> <span class="details">2 items</span></a></li>
-
-
-					<li class="folders"><a href="Documents" title="files/Important Documents"
-							class=""><span class="icon folder full"></span><span class="name">
-								Documents</span> <span class="details">2 items</span></a></li>
-
-					<li class="folders"><a href="Movies" title="files/Movies" class=""><span
-								class="icon folder full"></span><span class="name">Movies</span> <span class="details">1</span></a></li>
-
-					
-					<li class="folders"><a href="Music" title="Music" class=""><span
-								class="icon folder full"></span><span class="name">Music</span> <span class="details">1</span></a></li>
-
-
-					<li class="folders"><a href="Trash" title="Trash"
-							class=""><span class="icon folder full"></span><span class="name">
-								Trash</span> <span class="details">2 items</span></a></li>
+					<ul class="data">
+						<?php
+						$imgFOLDER = './medias/file.png';
+						$imgDEFAULT = './medias/folder-icon.png';
+						$DEFAULT='/var/www/html/'; /*Default redirection quand le script commence*/
+						
+						if(isset($_GET['d'])){
+						  
+						  $DEFAULT ='/var/www/html/'.$_GET['d'];
+						  }
+						
+						  foreach (new DirectoryIterator($DEFAULT) as $fileInfo){
+							if (isset($_GET['d']) ){ 
+							$url=$_GET['d']."/".$fileInfo->getFilename();
+						  }
+						
+						  else{
+							$url=$fileInfo->getFilename();
+						  }
+						  
+						  
+						
+						
+						
+						?>
+						
 
 
-					<li class="folders"><a href="Movies" title="Movies" class=""><span
-								class="icon folder full"></span><span class="name">Movies</span> <span class="details">1</span></a></li>
-
-												
-
-					<li class="folders"><a href="Music" title="Music" class=""><span
-								class="icon folder full"></span><span class="name">Music</span> <span class="details">3</span></a></li>
-
-
-					<li class="folders"><a href="Empty" title="Empty" class=""><span
-								class="icon folder"></span><span class="name">Empty</span> <span
-								class="details">Empty</span></a></li>
-
-
-
-					<li class="folders"><a href="Videos" title="Videos" class=""><span
-								class="icon folder full"></span><span class="name">Videos</span> <span class="details">5
-								items</span></a></li>
+						<li class="folders ">
+							<!-- <span class="icon folder full "></span> -->
+								<?php
+									if($fileInfo->isDir()){
+						  			echo "<a href='?d=".rawurlencode($url)."'>",'<img src="'.$imgDEFAULT.'" alt="Fichier" width="50px" height="50px"/>'. $fileInfo->getFilename() . "</a><br>\n";
+						
+						  			}
+						  			if($fileInfo->isfile()){
+									echo  '<img src="'.$imgFOLDER.'" alt="Fichier" width="50px" height="50px"/>'. $fileInfo->getFilename() . "<br>\n";
+						  			}
+						
+						  			}
+								?>
 
 
-					<li class="folders"><a href="Photos" title="Photos" class=""><span
-								 class="icon folder full"></span><span class="name">Photos</span> <span class="details">5
-								items</span></a></li> 
-
-				
+						
+					</ul>
 
 
 				</div>
@@ -102,14 +90,11 @@
 		</div>
 
 
-		<div class="nothingfound">
-			<div class="nofiles"></div>
-			<span>No files here.</span>
-		</div>
+		
 
 	</div>
 
-	
+
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script src="assets/js/script.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
