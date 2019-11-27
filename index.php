@@ -15,7 +15,7 @@
 	<!-- Include our stylesheet -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-	<link href="assets/css/styles.css" rel="stylesheet" />
+	<link href="css/styles.css" rel="stylesheet" />
 
 
 
@@ -41,6 +41,7 @@
 
 					<ul class="data">
 						<?php
+						$imgFOLDER = './medias/file.png';
 						$imgDEFAULT = './medias/folder-icon.png';
 						$DEFAULT='/var/www/html/'; /*Default redirection quand le script commence*/
 						
@@ -66,80 +67,22 @@
 						
 
 
-						<li class="folders"><a href="Archives" title="files/Archives" class=""><span
-									class="icon folder full">
+						<li class="folders ">
+							<!-- <span class="icon folder full "></span> -->
 								<?php
-if($fileInfo->isDir()){
-						  echo '<img src="'.$imgDEFAULT.'" alt="Fichier" width="50px" height="50px"/>',"<a href='?d=".rawurlencode($url)."'>". $fileInfo->getFilename() . "</a><br>\n";
+									if($fileInfo->isDir()){
+						  			echo "<a href='?d=".rawurlencode($url)."'>",'<img src="'.$imgDEFAULT.'" alt="Fichier" width="50px" height="50px"/>'. $fileInfo->getFilename() . "</a><br>\n";
 						
-						  }
-						  if($fileInfo->isfile()){
-							echo  $fileInfo->getFilename() . "<br>\n";
-						  }
+						  			}
+						  			if($fileInfo->isfile()){
+									echo  '<img src="'.$imgFOLDER.'" alt="Fichier" width="50px" height="50px"/>'. $fileInfo->getFilename() . "<br>\n";
+						  			}
 						
-						  }
+						  			}
 								?>
-								</span><span class="name">Archives</span> <span
-									class="details">3
-									items</span></a></li>
-
-						<li class="folders"><a href="Archives" title="files/git" class=""><span
-									class="icon folder full"></span><span class="name">Git.</span> <span
-									class="details">4
-									items</span></a></li>
 
 
-						<li class="folders"><a href="Documents" title="files/Important Documents" class=""><span
-									class="icon folder full"></span><span class="name">
-									Documents</span> <span class="details">2 items</span></a></li>
-
-						<li class="folders"><a href="Documents" title="files/Important Documents" class=""><span
-									class="icon folder full"></span><span class="name">
-									Partially done</span> <span class="details">2 items</span></a></li>
-
-						<li class="folders"><a href="Movies" title="files/Movies" class=""><span
-									class="icon folder full"></span><span class="name">Movies</span> <span
-									class="details">1 item</span></a></li>
-
-
-						<li class="folders"><a href="Music" title="Music" class=""><span
-									class="icon folder full"></span><span class="name">Music</span> <span
-									class="details">1 item</span></a></li>
-
-
-						<li class="folders"><a href="Trash" title="Trash" class=""><span
-									class="icon folder full"></span><span class="name">
-									Trashcan</span> <span class="details">2 items</span></a></li>
-
-
-						<li class="folders"><a href="Movies" title="Movies" class=""><span
-									class="icon folder full"></span><span class="name"> Deleted files</span> <span
-									class="details">1 item</span></a></li>
-
-
-
-						<li class="folders"><a href="Music" title="Music" class=""><span
-									class="icon folder full"></span><span class="name">Projects</span> <span
-									class="details">3 items</span></a></li>
-
-
-						<li class="folders"><a href="Empty" title="Empty" class=""><span
-									class="icon folder"></span><span class="name">Empty</span> <span class="details">0
-									item</span></a></li>
-
-
-
-						<li class="folders"><a href="Videos" title="Videos" class=""><span
-									class="icon folder full"></span><span class="name">Videos</span> <span
-									class="details">5
-									items</span></a></li>
-
-
-						<li class="folders"><a href="Photos" title="Photos" class=""><span
-									class="icon folder full"></span><span class="name">Photos</span> <span
-									class="details">5
-									items</span></a></li>
-
+						
 					</ul>
 
 
@@ -148,10 +91,7 @@ if($fileInfo->isDir()){
 		</div>
 
 
-		<div class="nothingfound">
-			<div class="nofiles"></div>
-			<span>No files here.</span>
-		</div>
+		
 
 	</div>
 

@@ -1,5 +1,6 @@
 <?php
-$imgDEFAULT = '/media/folder-icon.png'
+$imgFOLDER = './medias/file.png';
+$imgDEFAULT = './medias/folder-icon.png';
 $DEFAULT='/var/www/html/'; /*Default redirection quand le script commence*/
 
 if(isset($_GET['d'])){
