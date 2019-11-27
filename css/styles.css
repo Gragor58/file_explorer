@@ -34,8 +34,8 @@ body {
 .filemanager {
 	width: 95%;
 	max-width:1340px;
-	position: relative;
-	margin: 100px auto 50px;
+    position: relative;
+    height: 50px;
 }
 
 @media all and (max-width: 965px) {
