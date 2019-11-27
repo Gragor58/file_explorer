@@ -42,6 +42,8 @@
 						<?php
 						$imgFOLDER = './medias/file.png';
 						$imgDEFAULT = './medias/folder-icon.png';
+						$imgPHP = './medias/icon_php.png';
+						$imgTXT = './medias/icon_text.png';
 						$DEFAULT='/var/www/html/'; /*Default redirection quand le script commence*/
 						
 						if(isset($_GET['d'])){
@@ -74,9 +76,14 @@
 						
 						  			}
 						  			if($fileInfo->isfile()){
-									echo  '<img src="'.$imgFOLDER.'" alt="Fichier" width="50px" height="50px"/>'. $fileInfo->getFilename() . "<br>\n";
-						  			}
-						
+										if($fileInfo == '.php'){	  
+
+									echo  '<img src="'.$imgPHP.'" alt="Fichier" width="50px" height="50px"/>'. $fileInfo->getFilename() . "<br>\n";
+									  }
+									  else {echo  '<img src="'.$imgFOLDER.'" alt="Fichier" width="50px" height="50px"/>'. $fileInfo->getFilename() . "<br>\n";
+
+									  }
+									
 						  			}
 								?>
 
