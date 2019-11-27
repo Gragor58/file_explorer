@@ -17,13 +17,16 @@
 
 body {
 	
-	background-color: #23232e;
+	background-color: #23232e83;
 	font: 14px normal Arial, Helvetica, sans-serif;
 	z-index: -4;
 }
 
-
-/*-------------------------
+/*.container{
+	 background-color: white;
+	margin-top: 150px;
+}
+  -------------------------
 	File manager
 -------------------------*/
 
@@ -141,7 +144,6 @@ body {
 
 
 
-
 @media all and (max-width:965px) {
 
 }
@@ -178,7 +180,9 @@ li{
 	cursor: pointer;
 	
 }
-
+/* .header{
+	background-image: url(../../medias/home-icon.jpg); 
+}*/
 
 .folders{
 	 
@@ -258,8 +262,18 @@ li{
 }
 
 
+.pad-left{
+	padding-left: 80px;
 
+}
 
+.details{
+	display: flex;
+	justify-content: right;
+padding-top: 15px;
+	color: white;
+	font-weight: 200;
+}
 
 
 
@@ -276,4 +290,9 @@ li{
 a{
 	color: #FFF;
 	text-decoration: none!important;
+
+}
+
+.name{
+	color: white;
 }
