@@ -1,0 +1,292 @@
+@charset "utf-8";
+
+
+/*-------------------------
+	Simple reset
+--------------------------*/
+
+*{
+	margin:0;
+	padding:0;
+}
+
+
+/*-------------------------
+	Demo page
+-------------------------*/
+
+body {
+	
+	background-color: #23232e83;
+	font: 14px normal Arial, Helvetica, sans-serif;
+	z-index: -4;
+}
+
+/* .container{ */
+	/* background-color: white;
+	margin-top: 150px; */
+/* } */
+/*-------------------------
+	File manager
+-------------------------*/
+
+
+.filemanager {
+	width: 95%;
+	max-width:1340px;
+	position: relative;
+	margin: 100px auto 50px;
+}
+
+
+
+
+/*-------------------------
+	Breadcrumps
+-------------------------*/
+
+
+.filemanager .breadcrumbs {
+	color: #ffffff;
+	margin-left:20px;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 35px;
+}
+
+.filemanager .breadcrumbs a:link, .breadcrumbs a:visited {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.filemanager .breadcrumbs a:hover {
+	text-decoration: underline;
+}
+
+.filemanager .breadcrumbs .arrow {
+	color:  #6a6a72;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 20px;
+}
+
+
+/*-------------------------
+	Search box
+-------------------------*/
+
+
+.filemanager .search {
+	position: absolute;
+	padding-right: 30px;
+	cursor: pointer;
+	right: 0;
+	font-size: 17px;
+	color: #ffffff;
+	display: block;
+	width: 40px;
+	height: 40px;
+}
+
+.filemanager .search:before {
+	content: '';
+	position: absolute;
+	margin-top:12px;
+	width: 10px;
+	height: 11px;
+	border-radius: 50%;
+	border: 2px solid #ffffff;
+	right: 8px;
+	
+}
+
+.filemanager .search:after {
+	content: '';
+	width: 3px;
+	height: 10px;
+	background-color: #ffffff;
+	border-radius: 2px;
+	position: absolute;
+	top: 23px;
+	right: 6px;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.filemanager .search input[type=search] {
+	border-radius: 2px;
+	color: #4D535E;
+	background-color: #FFF;
+	width: 250px;
+	height: 44px;
+	margin-left: -215px;
+	padding-left: 20px;
+	text-decoration-color: #4d535e;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 20px;
+	display: none;
+	outline: none;
+	border: none;
+	padding-right: 10px;
+	-webkit-appearance: none;
+}
+
+
+/*-------------------------
+	Content area
+-------------------------*/
+
+
+
+
+/*-------------------------
+		Icons
+-------------------------*/
+
+
+
+li{
+	
+	border-radius: 3px;
+	background-color: #373743;
+	width: 300px;
+	height: 115px;
+	margin: 10px;
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+	
+}
+li a{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    padding: 0.3em;
+
+}
+/* .header{
+	background-image: url(../../medias/home-icon.jpg); */
+
+
+.folders{
+	 
+	
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-size: 50px;
+	font-size: 15px;
+	font-weight: 700;
+	color: white;
+	line-height: 20px;
+	width: 350px;
+	/* white-space: nowrap; */
+	/* display: block; */
+	/* padding-left: 10px;
+	padding-top: 15px;
+	 */
+
+	overflow: hidden;
+	text-overflow: ellipsis;
+	top: 40px;
+	background-position:20px;
+
+
+}
+.icon.folder {
+	display: inline-block;
+	margin: 1em;
+	background-color: transparent;
+	overflow: hidden;
+}
+
+.icon.folder:after {
+	content: '';
+	float: left;
+	clear: left;
+	
+	/* background-color: #a0d4e4; */
+	width: 3em;
+	height: 2.25em;
+
+	border-radius: 0.1em;
+}
+
+
+.icon.file {
+	width: 2.5em;
+	height: 3em;
+	line-height: 3em;
+	text-align: center;
+	border-radius: 0.25em;
+	color: #FFF;
+	display: inline-block;
+	margin: 0.9em 1.2em 0.8em 1.3em;
+	position: relative;
+	overflow: hidden;
+	box-shadow: 1.74em -2.1em 0 0 #A4A7AC inset;
+}
+.icon.file:first-line {
+	font-size: 13px;
+	font-weight: 700;
+}
+.icon.file:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	border-width: 0;
+	border-bottom: 2.6em solid #DADDE1;
+	border-right: 2.22em solid rgba(0, 0, 0, 0);
+	top: -34.5px;
+	right: -4px;
+}
+
+
+
+
+
+.pad-left{
+	padding-left: 80px;
+
+}
+
+.details{
+	display: flex;
+	justify-content: right;
+padding-top: 15px;
+	color: white;
+	font-weight: 200;
+}
+
+.name{
+	color: white;
+}
+<<<<<<< HEAD:assets/css/styles.css
+
+@media all and (max-width:965px) {
+
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes showSlowlyElement {
+	100%   	{ transform: scale(1); opacity: 1; }
+	0% 		{ transform: scale(1.2); opacity: 0; }
+}
+
+/* Standard syntax */
+@keyframes showSlowlyElement {
+	100%   	{ transform: scale(1); opacity: 1; }
+	0% 		{ transform: scale(1.2); opacity: 0; }
+}
+
+@media all and (max-width: 965px) {
+	.filemanager {
+		margin: 30px auto 0;
+		padding: 1px;
+	}
+}
+@media (max-width: 1024px) {
+	#bsaHolder, footer{ display:none;}
+}
+=======
+>>>>>>> 0698ede1979c652b5ffcf272a1959b6c8b146038:css/styles.css
