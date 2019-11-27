@@ -1,0 +1,12 @@
+{
+    "name": "vagrant/html",
+    "authors": [
+        {
+            "name": "Gragor58",
+            "email": "gragor46@gmail.com"
+        }
+    ],
+    "require": {
+        "twig/twig": "^3.0"
+    }
+}
