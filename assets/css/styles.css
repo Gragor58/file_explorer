@@ -17,7 +17,7 @@
 
 body {
 	
-	background-color: #23232e83;
+	background-color: #23232ec7;
 	font: 14px normal Arial, Helvetica, sans-serif;
 	z-index: -4;
 }
@@ -27,6 +27,9 @@ body {
 	margin-top: 150px;
 }
   -------------------------
+
+
+/*-------------------------
 	File manager
 -------------------------*/
 
@@ -43,6 +46,11 @@ body {
 		margin: 30px auto 0;
 		padding: 1px;
 	}
+}
+
+.home{
+	margin-left: 100px;
+
 }
 
 
@@ -180,9 +188,15 @@ li{
 	cursor: pointer;
 	
 }
-/* .header{
-	background-image: url(../../medias/home-icon.jpg); 
-}*/
+.header{
+	background-image: url(../../medias/home-icon.png);
+	cursor: pointer;
+
+}
+.top{
+	margin-top: 50px;
+	
+}
 
 .folders{
 	 
@@ -195,12 +209,7 @@ li{
 	color: white;
 	line-height: 20px;
 	width: 350px;
-	/* white-space: nowrap; */
-	/* display: block; */
-	/* padding-left: 10px;
-	padding-top: 15px;
-	 */
-
+	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	top: 40px;
@@ -218,11 +227,8 @@ li{
 	content: '';
 	float: left;
 	clear: left;
-	
-	/* background-color: #a0d4e4; */
 	width: 3em;
 	height: 2.25em;
-
 	border-radius: 0.1em;
 }
 
