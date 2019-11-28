@@ -43,14 +43,17 @@
 				<ul class="data">
 					<?php
 
-						$imgPHP = './medias/icon_php.png';
-						$imgTXT = './medias/icon_text.png';
-						$imgFOLDER = './medias/file-icon.png';
-						$imgDEFAULT = './medias/folder-icon.png';
-						$imgPHP = './medias/icon_php.png';
-						$imgTXT = './medias/icon_text.png';
-						$DEFAULT='/var/www/html/'; /*Default redirection quand le script commence*/
 						
+						$imgDEFAULT = './medias/folder-icon.png';
+					
+						$DEFAULT='/var/www/html/'; /*Default redirection quand le script commence*/
+						$arr =array(1=>'files');
+						
+						if($sec= array_key_exists('files', $arr)){
+							return TRUE;
+						}
+						
+
 						if(isset($_GET['d'])){
 						  
 						  $DEFAULT ='/var/www/html/'.$_GET['d'];
@@ -84,7 +87,7 @@
 						
 						  	}
 						  	if($fileInfo->isfile()){
-							var_dump(pathinfo($fileInfo, PATHINFO_EXTENSION));
+							// var_dump(pathinfo($fileInfo, PATHINFO_EXTENSION));
 							$multiIMG = pathinfo($fileInfo, PATHINFO_EXTENSION);
 							echo  '<li class="folders ">','<img src="medias/'.$multiIMG.'-icon.png" alt="Fichier" width="50px" height="50px"/>'. $fileInfo->getFilename() . "<br>\n";
 							}
