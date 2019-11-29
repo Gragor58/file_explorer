@@ -24,7 +24,7 @@
 
 
 <body>
-	
+
 		<div class="container-fluid">
 		
 			<div class="container">
@@ -32,8 +32,6 @@
 				<div class="row">
 				<a href="index.php"><img src="./medias/home-icon.png" alt="accueil" width="50px" alt="50px"></a>
 				
-
-
 				<ul class="data">
 
 					<?php
