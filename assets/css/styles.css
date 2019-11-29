@@ -20,6 +20,9 @@ body {
 	background-color: #23232ec7;
 	font: 14px normal Arial, Helvetica, sans-serif;
 	z-index: -4;
+	/* margin-left: 20px;
+	margin-right: 20px; */
+
 }
 
 
@@ -29,12 +32,12 @@ body {
 -------------------------*/
 
 
-.filemanager {
+/* .filemanager {
 	width: 95%;
 	max-width:1340px;
 	position: relative;
 	margin: 100px auto 50px;
-}
+} */
 
 
 
@@ -53,18 +56,18 @@ body {
 -------------------------*/
 
 
-.filemanager .breadcrumbs {
+/* .filemanager .breadcrumbs {
 	color: #ffffff;
 	margin-left:20px;
 	font-size: 24px;
 	font-weight: 700;
 	line-height: 35px;
-}
+} */
 
-.filemanager .breadcrumbs a:link, .breadcrumbs a:visited {
+/* .filemanager .breadcrumbs a:link, .breadcrumbs a:visited {
 	color: #ffffff;
 	text-decoration: none;
-}
+} */
 
 .filemanager .breadcrumbs a:hover {
 	text-decoration: underline;
