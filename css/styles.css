@@ -9,6 +9,7 @@ body {
 	background-color: #23232e83;
 	font: 14px normal Arial, Helvetica, sans-serif;
 	z-index: -4;
+
 }
 
 /* .container{ */
@@ -39,6 +40,9 @@ body {
     transition: 300ms;
 }
 
+.explorer-font{
+	font-size: 2em;
+}
 
 .data{
     padding: 0;

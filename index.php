@@ -15,7 +15,7 @@
 	<!-- Include our stylesheet -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-	<link href="css/styles.css" rel="stylesheet" />
+	<link href="css/styles.css" rel="stylesheet"/>
 
 	<title>Cute file browser</title>
 
@@ -30,7 +30,7 @@
 				
 				<a href="index.php"><img class="mx-2 homestyle" src="./medias/home-icon.png" alt="accueil" width="50px" alt="50px"></a>
 				
-				<div class="text-white py-2">
+				<div class="text-white explorer-font py-2">
 					<?php
 						
 						if(!isset($_GET['d'])){
