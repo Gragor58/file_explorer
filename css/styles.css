@@ -40,7 +40,7 @@ body {
   height: 50px;
 }
 .container .style a{
-    border-right: 1px solid #373743;
+    
     padding: 10px 0;
 }
 .container .style a:hover{
@@ -59,7 +59,9 @@ body {
     flex-wrap: wrap;
 
 }
-
+ul{
+    margin-bottom: 0;
+}
 li{
 	
 	border-radius: 3px;

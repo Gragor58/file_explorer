@@ -47,24 +47,26 @@ $DEFAULT ='/var/www/html/'.$_GET['d'];
 	<div class="container-fluid mt-5">
 		<div class="container">
 			<div class="row style mb-5 ">
+				<div class="col-10 p-0 d-flex align-items-center">
 
 
 				<a href="index.php"><img class="mx-2 homestyle" src="./medias/home-icon.png" alt="accueil" width="50px"
 						alt="50px"></a>
 
-				<div class="text-white explorer-font d-flex justify-content-center align-items-center mx-5 ">
+				<div class="text-white explorer-font mx-5 ">
 					<?php
 						echo '<p>'.$path.'</p>';
 					?>
 				</div>
-				
-				<a href="javascript:history.go(-1)"><img class="mx-2 homestyle" src="./medias/home-icon.png" alt="accueil" width="50px"
+				</div>
+				<div class="col-2 p-0 d-flex align-items-center justify-content-end">
+				<a  href="javascript:history.go(-1)"><img class="mx-2 homestyle " src="./medias/arrow-left-icon.png" alt="accueil" width="50px"
 					alt="50px"></a>
 			
-				<a href="javascript:history.go(+1)"><img class="mx-2 homestyle" src="./medias/home-icon.png" alt="accueil" width="50px"
+				<a  href="javascript:history.go(+1)"><img class="mx-2 homestyle" src="./medias/arrow-right-icon.png" alt="accueil" width="50px"
 					alt="50px"></a>
 
-				
+				</div>
 
 			</div>
 
