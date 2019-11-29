@@ -21,31 +21,21 @@
 
 </head>
 
-<div class="header"></div>
+
 
 <body>
-	<div class="container-fluid">
-		<div class="container">
-			<div class="row">
-				<!-- <div class="filemanager">
-					<div class="search">
-						<input type="search" placeholder="Find a file.." /> -->
-					</div>
-				</div>
-
-				<div class="header">
-					<img src="./medias/home-icon.jpg" alt="">
-				</div>
-			</div>
-			<div class="row">
-
+	
 		<div class="container-fluid">
+		
 			<div class="container">
+			
 				<div class="row">
-				<img src="../rootprojet/medias/home-icon.jpg" alt="">
+				<a href="index.php"><img src="./medias/home-icon.png" alt="accueil" width="50px" alt="50px"></a>
+				
 
 
 				<ul class="data">
+
 					<?php
 
 						
@@ -88,13 +78,13 @@
 							if($fileInfo->isDir()){
 								// if ($fileInfo == '.' or $fileInfo == '..'){echo }
 
-						  	echo '<li class="folders ">',"<a href='?d=".rawurlencode($url)."'>",'<img src="'.$imgDEFAULT.'" alt="Fichier" width="50px" height="50px"/>'.'<p>' .$fileInfo->getFilename().'</p>' . "</a><br>\n";
+						  	echo '<li class="folders ">',"<a class='align-items-center' href='?d=".rawurlencode($url)."'>",'<img src="'.$imgDEFAULT.'" alt="Fichier" width="50px" height="50px"/>' .$fileInfo->getFilename() . "</a><br>\n";
 						
 						  	}
 						  	if($fileInfo->isfile()){
 							// var_dump(pathinfo($fileInfo, PATHINFO_EXTENSION));
 							$multiIMG = pathinfo($fileInfo, PATHINFO_EXTENSION);
-							echo  '<li class="folders">','<div class="d-flex justify-content-center pad">','<img src="medias/'.$multiIMG.'-icon.png" alt="Fichier" width="50px" height="50px"/>','<p>' .$fileInfo->getFilename().'</p>','</div>'. "<br>\n";
+							echo  '<li class="folders">','<div class="d-flex justify-content-center pad align-items-center">','<img class="imgIcon align-items-center" src="medias/'.$multiIMG.'-icon.png" alt="Fichier" width="50px" height="50px"/>','<p>' .$fileInfo->getFilename().'</p>','</div>'. "<br>\n";
 							}
 						  	}
 							
