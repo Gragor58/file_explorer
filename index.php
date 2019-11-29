@@ -25,11 +25,12 @@
 <body>
 	<div class="container-fluid">
 		<div class="container">
-			<div class="row style">
+			<div class="row style mt-5 ">
 
-
-				<a href="index.php"><img src="./medias/home-icon.png" alt="accueil" width="50px" alt="50px"></a>
-				<div>
+				
+				<a href="index.php"><img class="mx-2 homestyle" src="./medias/home-icon.png" alt="accueil" width="50px" alt="50px"></a>
+				
+				<div class="text-white py-2">
 					<?php
 						
 						if(!isset($_GET['d'])){
@@ -84,7 +85,7 @@
 							if ($fileInfo == '.'){continue;}
 							if ($fileInfo == '..'){}
 						
-						echo '<li class="folders ">',"<a class='align-items-center' href='?d=".rawurlencode($url)."'>",'<img src="'.$imgDEFAULT.'" alt="Fichier" width="50px" height="50px"/>' .$fileInfo->getFilename() . "</a><br>\n";
+						echo '<li class="folders my-4 ">',"<a class='align-items-center' href='?d=".rawurlencode($url)."'>",'<img src="'.$imgDEFAULT.'" alt="Fichier" width="50px" height="50px"/>' .$fileInfo->getFilename() . "</a><br>\n";
 					
 						}
 						if($fileInfo->isfile()){
@@ -92,7 +93,7 @@
 						var_dump(pathinfo($fileInfo, PATHINFO_EXTENSION));
 						$multiIMG = pathinfo($fileInfo, PATHINFO_EXTENSION);
 								
-						echo  '<li class="folders">','<div class="d-flex justify-content-center pad align-items-center">','<img class="imgIcon align-items-center" src="medias/'.$multiIMG.'-icon.png" alt="Fichier" width="50px" height="50px"/>','<p>' .$fileInfo->getFilename().'</p>','</div>'. "<br>\n";
+						echo  '<li class="folders my-4">','<div class="d-flex justify-content-center pad align-items-center">','<img class="imgIcon align-items-center" src="medias/'.$multiIMG.'-icon.png" alt="Fichier" width="50px" height="50px"/>','<p>' .$fileInfo->getFilename().'</p>','</div>'. "<br>\n";
 						}
 						}
 						
