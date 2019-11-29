@@ -29,7 +29,16 @@
 				
 				
 					<a href="index.php"><img src="./medias/home-icon.png" alt="accueil" width="50px" alt="50px"></a>
-					
+					<div>
+						<?php
+						
+						if(!isset($_GET['d'])){
+							$_GET['d']= '.';
+						}
+						$path = getcwd()."/".$_GET['d'];
+						echo $path;
+						?>
+					</div>
 				
 
 				
@@ -68,24 +77,23 @@
 						  
 						
 						
-						
-						
 						?>
-
-
 
 					
 						<!-- <span class="icon folder full "></span> -->
 						<?php
 							
 							if($fileInfo->isDir()){
-								// if ($fileInfo == '.' or $fileInfo == '..'){echo }
 
+								if ($fileInfo == '.'){continue;}
+								if ($fileInfo == '..'){}
+							
 						  	echo '<li class="folders ">',"<a class='align-items-center' href='?d=".rawurlencode($url)."'>",'<img src="'.$imgDEFAULT.'" alt="Fichier" width="50px" height="50px"/>' .$fileInfo->getFilename() . "</a><br>\n";
 						
 						  	}
 						  	if($fileInfo->isfile()){
-							// var_dump(pathinfo($fileInfo, PATHINFO_EXTENSION));
+								  
+							var_dump(pathinfo($fileInfo, PATHINFO_EXTENSION));
 							$multiIMG = pathinfo($fileInfo, PATHINFO_EXTENSION);
 							echo  '<li class="folders">','<div class="d-flex justify-content-center pad align-items-center">','<img class="imgIcon align-items-center" src="medias/'.$multiIMG.'-icon.png" alt="Fichier" width="50px" height="50px"/>','<p>' .$fileInfo->getFilename().'</p>','</div>'. "<br>\n";
 							}
