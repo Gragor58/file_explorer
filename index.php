@@ -83,13 +83,13 @@
 							if($fileInfo->isDir()){
 								// if ($fileInfo == '.' or $fileInfo == '..'){echo }
 
-						  	echo '<li class="folders ">',"<a href='?d=".rawurlencode($url)."'>",'<img src="'.$imgDEFAULT.'" alt="Fichier" width="50px" height="50px"/>'. $fileInfo->getFilename() . "</a><br>\n";
+						  	echo '<li class="folders ">',"<a href='?d=".rawurlencode($url)."'>",'<img src="'.$imgDEFAULT.'" alt="Fichier" width="50px" height="50px"/>'.'<p>' .$fileInfo->getFilename().'</p>' . "</a><br>\n";
 						
 						  	}
 						  	if($fileInfo->isfile()){
 							// var_dump(pathinfo($fileInfo, PATHINFO_EXTENSION));
 							$multiIMG = pathinfo($fileInfo, PATHINFO_EXTENSION);
-							echo  '<li class="folders ">','<img src="medias/'.$multiIMG.'-icon.png" alt="Fichier" width="50px" height="50px"/>'. $fileInfo->getFilename() . "<br>\n";
+							echo  '<li class="folders">','<div class="d-flex justify-content-center pad">','<img src="medias/'.$multiIMG.'-icon.png" alt="Fichier" width="50px" height="50px"/>','<p>' .$fileInfo->getFilename().'</p>','</div>'. "<br>\n";
 							}
 						  	}
 							

@@ -184,7 +184,12 @@ li a{
     justify-content: center;
     height: 100%;
     padding: 0.3em;
-
+    color: white;
+    text-decoration: none;
+}
+li a:hover{
+    color: white;
+    text-decoration: none;
 }
 /* .header{
 	background-image: url(../../medias/home-icon.jpg); */
@@ -213,6 +218,14 @@ li a{
 	background-position:20px;
 
 
+}
+.folders:hover{
+    background-color: rgb(109, 111, 116);
+    transition: 300ms;
+    
+}
+.pad{
+    padding: 0.3em;
 }
 .icon.folder {
 	display: inline-block;
