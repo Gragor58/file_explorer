@@ -20,17 +20,16 @@
 	<title>Cute file browser</title>
 
 </head>
+
 <div class="header"></div>
-
-
 
 <body>
 	<div class="container-fluid">
 		<div class="container">
 			<div class="row">
-				<div class="filemanager">
+				<!-- <div class="filemanager">
 					<div class="search">
-						<input type="search" placeholder="Find a file.." />
+						<input type="search" placeholder="Find a file.." /> -->
 					</div>
 				</div>
 
