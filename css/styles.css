@@ -34,8 +34,8 @@ body {
 .filemanager {
 	width: 95%;
 	max-width:1340px;
-	position: relative;
-	margin: 100px auto 50px;
+    position: relative;
+    height: 50px;
 }
 
 @media all and (max-width: 965px) {
@@ -135,6 +135,7 @@ body {
 	border: none;
 	padding-right: 10px;
 	-webkit-appearance: none;
+	box-sizing: unset;
 }
 
 
@@ -184,7 +185,12 @@ li a{
     justify-content: center;
     height: 100%;
     padding: 0.3em;
-
+    color: white;
+    text-decoration: none;
+}
+li a:hover{
+    color: white;
+    text-decoration: none;
 }
 /* .header{
 	background-image: url(../../medias/home-icon.jpg); */
@@ -213,6 +219,14 @@ li a{
 	background-position:20px;
 
 
+}
+.folders:hover{
+    background-color: rgb(109, 111, 116);
+    transition: 300ms;
+    
+}
+.pad{
+    padding: 0.3em;
 }
 .icon.folder {
 	display: inline-block;
