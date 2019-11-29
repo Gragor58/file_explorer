@@ -21,7 +21,7 @@
 
 </head>
 <div class="header"></div>
-<img src="../rootprojet/medias/home-icon.jpg" alt="">
+
 
 <body>
 
@@ -35,6 +35,7 @@
 		<div class="container-fluid">
 			<div class="container">
 				<div class="row">
+				<img src="../rootprojet/medias/home-icon.jpg" alt="">
 
 
 
