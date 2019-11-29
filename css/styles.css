@@ -19,7 +19,7 @@ body {
 	File manager
 -------------------------*/
 .container{
-    min-height: 100vh;
+    min-height: 90vh;
 }
 .style{
     background-color: #23232e83;
@@ -27,16 +27,18 @@ body {
     
 }
 .homestyle{
-    ;
-  width: 50px;
-  height: 50px;
+    
+  width: 45px;
+  height: 45px;
 }
 .container .style a{
     border-right: 1px solid #373743;
+    padding: 10px 0;
 }
 .container .style a:hover{
     background-color: #23232e83;
     transition: 300ms;
+    
 }
 
 
@@ -51,7 +53,7 @@ li{
 	border-radius: 3px;
 	background-color: #373743;
 	width: 300px;
-	height: 115px;
+	height: 125px;
 	display: inline-block;
 	position: relative;
 	cursor: pointer;
@@ -71,8 +73,10 @@ li a:hover{
 }
 /* .header{
 	background-image: url(../../medias/home-icon.jpg); */
-
-
+    
+    .wdiff{
+        width: 40px;
+    }
 .folders{
 	 
 	
@@ -153,7 +157,9 @@ li a:hover{
 	right: -4px;
 }
 
-
+.imgIcon{
+    margin: 0 55px 0 25px;
+}
 
 
 .pad-left{
