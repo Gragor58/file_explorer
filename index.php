@@ -48,20 +48,30 @@ $DEFAULT ='/var/www/html/'.$_GET['d'];
 		<div class="container">
 			<div class="row style mb-5 ">
 
-				
-				<a href="index.php"><img class="mx-2 homestyle" src="./medias/home-icon.png" alt="accueil" width="50px" alt="50px"></a>
-				
-				<div class="text-white py-2">
+
+				<a href="index.php"><img class="mx-2 homestyle" src="./medias/home-icon.png" alt="accueil" width="50px"
+						alt="50px"></a>
+
+				<div class="text-white explorer-font d-flex justify-content-center align-items-center mx-5 ">
 					<?php
-						echo $path;
+						echo '<p>'.$path.'</p>';
 					?>
 				</div>
+				
+				<a href="javascript:history.go(-1)"><img class="mx-2 homestyle" src="./medias/home-icon.png" alt="accueil" width="50px"
+					alt="50px"></a>
+			
+				<a href="javascript:history.go(+1)"><img class="mx-2 homestyle" src="./medias/home-icon.png" alt="accueil" width="50px"
+					alt="50px"></a>
+
+				
+
 			</div>
 
 			<div class="row">
 				<ul class="data ">
 
-					
+
 
 					<!-- <span class="icon folder full "></span> -->
 					<?php
@@ -76,7 +86,7 @@ $DEFAULT ='/var/www/html/'.$_GET['d'];
 						}
 						if($fileInfo->isDir()){
 
-							if ($fileInfo == '.'){continue;}
+							if ($fileInfo == '.' or $fileInfo == '..'){continue;}
 							
 						echo '<li class="folders my-3 mx-2">',"<a class='align-items-center justify-content-start' href='?d=".rawurlencode($url)."'>",'<img class="imgIcon" src="'.$imgDEFAULT.'" alt="Fichier" width="50px" height="50px"/>','<p class="wdiff">'. $fileInfo->getFilename().'</p>' , "</a><br>\n";
 						
@@ -98,7 +108,7 @@ $DEFAULT ='/var/www/html/'.$_GET['d'];
 				</ul>
 
 			</div>
-			
+
 		</div>
 	</div>
 

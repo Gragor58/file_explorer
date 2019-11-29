@@ -9,6 +9,7 @@ body {
 	background-color: #23232e83;
 	font: 14px normal Arial, Helvetica, sans-serif;
 	z-index: -4;
+
 }
 
 /* .container{ */
@@ -26,10 +27,17 @@ body {
     border-radius: 3px;
     
 }
+.return{
+    padding: 0!important;
+    height: 100vh;
+}
+.container .row .explorer-font p{
+    margin-bottom: 0;
+}
 .homestyle{
     
-  width: 45px;
-  height: 45px;
+  width: 50px;
+  height: 50px;
 }
 .container .style a{
     border-right: 1px solid #373743;
@@ -41,6 +49,10 @@ body {
     
 }
 
+.explorer-font{
+    font-size: 2em;
+    
+}
 
 .data{
     padding: 0;
