@@ -2,7 +2,8 @@
 		
 $imgDEFAULT = './medias/folder-icon.png';
 
-$DEFAULT='/var/www/html/'; /*Default redirection quand le script commence*/
+$DEFAULT='/home/hugob/www/public/explorateur/'; /*Default redirection quand le script commence*/
+// $DEFAULT='/var/www/html/'; /*Default redirection quand le script commence*/
 
 if(!isset($_GET['d'])){
 	$_GET['d']= '.';
@@ -12,7 +13,7 @@ $path = getcwd()."/".$_GET['d'];
 
 if(isset($_GET['d'])){
 
-$DEFAULT ='/var/www/html/'.$_GET['d'];
+$DEFAULT ='/home/hugob/www/public/explorateur/'.$_GET['d'];
 }
 
 ?>

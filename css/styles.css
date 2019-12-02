@@ -6,10 +6,9 @@
 
 body {
 	
-	background: url(../medias/blue-carbon-fiber-wallpaper-1.jpg);
+	background-image: url(../medias/blue-carbon-fiber-wallpaper-1.jpg);
 	font: 14px normal Arial, Helvetica, sans-serif;
 	z-index: -4;
-
 }
 
 /* .container{ */
@@ -25,7 +24,6 @@ body {
 .style{
     background-color: #23232e83;
     border-radius: 3px;
-    
 }
 .return{
     padding: 0!important;
@@ -45,8 +43,7 @@ body {
 }
 .container .style a:hover{
     background-color: #23232e83;
-    transition: 300ms;
-    
+	transition: 300ms;
 }
 
 .explorer-font{
