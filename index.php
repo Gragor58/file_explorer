@@ -45,6 +45,9 @@ $DEFAULT ='/home/hugob/www/public/explorateur/'.$_GET['d'];
 
 
 <body>
+
+
+
 	<div class="container-fluid mt-5">
 		<div class="container">
 			<div class="row style mb-5 ">
